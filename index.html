@@ -3,8 +3,7 @@
 	<head>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-			
-			<style>
+		<style>
 			body{
 				background: url('images/backgroundimage.webp') no-repeat center center fixed; 
 				-webkit-background-size: cover;
@@ -12,6 +11,7 @@
 				-o-background-size: cover;
 				background-size: cover;
 				color: #f9fafb;
+				margin: 30px;
 			}
 			.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
 				color: #fff;
@@ -24,20 +24,25 @@
 				color: #FFFFFF;
 			}
 			.bg-secondary {
-				--bs-bg-opacity: .5;
+				--bs-bg-opacity: .75;
 				background-color: rgba(var(--bs-secondary-rgb),var(--bs-bg-opacity))!important;
 			}
 						#grad {
 			  background-image: linear-gradient(to bottom right, black, gray);
 			}
-			</style>
+			.btn-secondary {
+				color: #fff;
+				background-color: #0d6efd00;
+				border-color: #0d6efd00;
+			}
+		</style>
 	</head>
 	<body>
-	<div id="grad" style="height:20px"></div>
+		<!--<div id="grad" style="height:20px"></div>-->
 		<div class="p-3 mb-2 bg-secondary text-white">
 		<ul class="nav nav-pills">
 		  <li class="nav-item">
-			<a class="nav-link active" aria-current="page" href="#">Home Page</a>
+			<a class="nav-link active" aria-current="page" href="#"><h4><i>Animeals</i></h4></a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="#">The BFF Project</a>
@@ -64,11 +69,31 @@
 		</ul>
 		</div>
 		<br />
-		<p>Help feed the hungry, the <br />
+		<h3><i>Help feed the hungry, the <br />
 		tired, the lost, and the little<br />
 		creatures struggling to survive;<br />
 		Please help to feed as many <br />
 		animals as possible; to ease the<br />
-		world of the weak and powerless.</p>
+		world of the weak and powerless.</i></h3>
+		<br />
+		<br />
+		<br />
+		<br />
+		<div class="container">
+		  <div class="row align-items-start">
+			<div class="col">
+			  
+			</div>
+			<div class="col">
+			  
+			</div>
+			<div class="col">
+			  	<h3 align="center" style="color:#bd0dfd";><i>WE RESCUE, WE FEED, WE HEAL.</i></h3>
+				<h3 align="center"><a class="btn btn-secondary" href="#" role="button"><img src="images/donatebutton.webp"></a></h3>
+				<h3 align="center" style="color:#bd0dfd";><i>~We are their voice; may their voice never fade~</i></h3>
+			</div>
+		  </div>
+		</div>
+
 	</body>
 </html>
