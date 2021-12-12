@@ -1,0 +1,31 @@
+			body{
+				background: url('images/backgroundimage.webp') no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				color: #f9fafb;
+				margin: 30px;
+			}
+			.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+				color: #fff;
+				background-color: #bd0dfd;
+			}	
+			.nav-link:focus, .nav-link:hover {
+				color: #bd0dfd;
+			}
+			.nav-link {
+				color: #FFFFFF;
+			}
+			.bg-secondary {
+				--bs-bg-opacity: .75;
+				background-color: rgba(var(--bs-secondary-rgb),var(--bs-bg-opacity))!important;
+			}
+						#grad {
+			  background-image: linear-gradient(to bottom right, black, gray);
+			}
+			.btn-secondary {
+				color: #fff;
+				background-color: #0d6efd00;
+				border-color: #0d6efd00;
+			}
