@@ -12,30 +12,40 @@
 		  </style>
 	</head>
 	<body>
-		<ul class="nav nav-pills">
-		  <li class="nav-item">
-			<a class="nav-link active" aria-current="page" href="#">The BFF Project</a>
-		  </li>
-		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Adopt</a>
-			<ul class="dropdown-menu">
-			  <li><a class="dropdown-item" href="#">Adoption Online Form</a></li>
-			  <li><a class="dropdown-item" href="#">Happy Endings</a></li>
+		<div class="p-3 mb-2 bg-secondary text-white">
+			<ul class="nav nav-pills">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#"><h4><i>Animeals</i></h4></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">The BFF Project</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Adopt</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Lost and found</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="true">Programs</a>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Programs Info</a></li>
+				  <li><a class="dropdown-item" href="#">Foster Programs</a></li>
+				</ul>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Get Involved</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Contact</a>
+			  </li>
 			</ul>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="#">Lost and found</a>
-		  </li>
-		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Programs</a>
-			<ul class="dropdown-menu">
-			</ul>
-		  </li>
-		</ul>
-        <h2 class="font_2" style="font-size: 20px; text-align: center;"><span style="font-size:20px"><span style="font-family:helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif"><span style="letter-spacing:0.05em"><span style="font-weight:bold"><span style="color:#292929">1700 Rankin Street, Missoula MT</span></h2>
+			</div>
+<br>
+        <h2 class="font_2" style="font-size: 20px; text-align: center;"><span style="font-size:20px"><span style="font-family:sans-serif"><span style="color:white">1700 Rankin Street, Missoula MT</span></h2>
 
         
-        <h4 class="font_4" style="text-align:center;font-size:40px"><span style="color:#000000;"><span style="font-weight:bold">LOST &amp; FOUND CATS</span></span></h4>
+        <h4 class="font_4" style="text-align:center;font-size:40px"><span style="color:white;"><span style="font-weight:bold">LOST &amp; FOUND CATS</span></span></h4>
         <div class="container">
 
 			<ul class="form-selection page-selection">
@@ -46,29 +56,49 @@
 				<div class="container" style="background-color: rgb(236, 226, 233); color: purple;">
 						<form action="/action_page.php">
 						<div class="col">
-						  <label for="fname">First Name</label>
-						  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-						  <label for="lname">Last Name</label>
-						  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-						  </div>
+							<div class="row">
+								<div class="col-md-4">
+									<label for="fname">Your Name</label>
+								</div>
+								<div class="col-md-8">
+									<input type="text" id="fname" name="firstname" placeholder="First Name" style="background-color: purple; color: white;">
+									<br><br>
+									<input type="text" id="lname" name="lastname" placeholder="Last Name" style="background-color: purple; color: white;" >
+								</div>
+							</div>
+							<br>
 						  <div class="col">
-						  <label for="email">Enter your email:</label>
-						  <input type="email" id="email" name="email">
+							<div class="row">
+								<div class="col-md-4">
+									<label for="email">Enter your email:</label>
+								</div>
+								<div class="col-md-8">
+									<input type="email" id="email" name="email" style="background-color: purple; color: white;">
+								</div>
 						  </div>
+						  <br>
 						  <div class="col">
-							  <label for="tel">Enter your Phone Number</label>
-							<input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
-						  </div>
-						  <div class="col">
-							<div>
-								<input type="checkbox" id="Lost" name="Lost">
-								<label for="Lost">Lost</label>
-								<input type="checkbox" id="Found" name="Found">
-								<label for="Found">Found</label>
+							<div class="row"
+								<div class="col-md-4">
+									<label for="tel">Enter your Phone Number</label>
+								</div>
+								<div class="col-md-8">
+									<input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="background-color: purple;color: white;" required>
+								</div>
 							</div>
 							</div>
-							<div class="col">
-								<div>
+						  </div>
+						  <div class="col">
+							<div class="row">
+								<div class="col-md-4">
+									<label for="Lost">Lost or Found</label>
+								</div>
+								<div class="col-md-8">
+									<input type="checkbox" id="Lost" name="Lost">
+									<label for="Lost">Lost</label>
+									<input type="checkbox" id="Found" name="Found">
+									<label for="Found">Found</label>
+									<br>
 									<input type="checkbox" id="Cat" name="Cat">
 									<label for="Cat">Cat</label>
 									<input type="checkbox" id="Dog" name="Dog">
@@ -76,34 +106,92 @@
 									<input type="checkbox" id="Other" name="Other">
 									<label for="Other">Other</label>
 								</div>
-							</div>
-							<div class="col">
-								<label for="petname">Pet's Name</label>
-								<input type="text" id="petname" name="petname" placeholder="Pet's Name">
-							</div>
-							<div class="col">
-								<label for="missing">How long have they been missing?</label>
-								<input type="text">
-							</div>
+								</div>
+								<br>
 							<div class="col">
 								<div>
-									<input type="checkbox" id="Male" name="Male">
-									<label for="Male">Male</label>
-									<input type="checkbox" id="Female" name="Female">
-									<label for="Female">Female</label>
-									<input type="checkbox" id="Unknown" name="Unknown">
-									<label for="Unknown">Unknown</label>
+
+								</div>
+							</div>
+							<div class="col">
+								<div class="row">
+									<div class="col-md-4">
+										<label for="petname">Pet's Name</label>
+									</div>
+									<div class="col-md-8">
+										<input type="text" id="petname" name="petname" placeholder="Pet's Name" style="background-color: purple; color: white;">
+									</div>
+							</div>
+							</div>
+							<br>
+							<div class="col">
+								<div class="row">
+									<div class="col-md-4">
+										<label for="missing">How long have they been missing?</label>
+									</div>
+									<div class="col-md-8">
+										<input type="text" style="background-color: purple; color: white;">
+									</div>
+							</div>
+							</div>
+							<br>
+							<div class="col">
+								<div class="row">
+									<div class="col-md-4">
+										<label for="Gender">Gender</label>
+									</div>
+									<div class="col-md-8">
+											<input type="checkbox" id="Male" name="Male">
+											<label for="Male">Male</label>
+											<input type="checkbox" id="Female" name="Female">
+											<label for="Female">Female</label>
+											<input type="checkbox" id="Unknown" name="Unknown">
+											<label for="Unknown">Unknown</label>
+									</div>
 								</div>
 							</div>
 							<br>
 							<div class="col">
 								<p>Please provide a <b>detailed description</b> of your animal icluding, <b>when/where</b> the animal was lost/found, any <b>identifying marks</b>, are the <b>micro-chipped</b>, are they wearing a <b>collar</b> etc. The more details the better chance there is of being reunited with your pet.</p>
 							</div>
-
+							<div class="row">
+								<div class="col-md-4">
+									<label for="Comment">Description of the Pet</p></label>
+								</div>
+								<div class="col-md-8">
+									<textarea id="subject" name="subject" placeholder="" style="height:200px; width: 200px; background-color: purple; color: white;"></textarea>
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-md-4">
+									<label for="Comment">What Area was the Pet Found/Lost in? As specific as possible</p></label>
+								</div>
+								<div class="col-md-8">
+									<textarea id="subject" name="subject" placeholder="" style="height:200px; width: 200px; background-color: purple; color: white;"></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<label for="Label">Upload an Image(s) of Lost / Found Animal</label>
+								</div>
+								<div class="col-md-8">
+									<form action="/action_page.php">
+										<input type="file" id="myFile" name="filename">
+										<p>Max Total Upload Size: 20MB</p>
+									  </form>
+								</div>
+							</div>
+							<div="center">
+							<button type="button" class="btn btn-dark">Send Image(s) to Animeals</button>
+							<button type="button" class="btn btn-dark">Clear Form</button>
+							</div>
 					</div>
 				</form>
 			  </div>
 	  </div>
+
+
 
 
     </body>
